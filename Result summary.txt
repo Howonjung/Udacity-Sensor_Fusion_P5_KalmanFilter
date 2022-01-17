@@ -1,0 +1,9 @@
+1. Process noise tuning
+ - std_a_(Process noise standard deviation longitudinal acceleration in m/s^2) & std_yawdd_ (Process noise standard deviation yaw acceleration in rad/s^2)
+   have been set 2.0 (m/s^2) and 3.0 rad/s^2 respectively. and NIS outlier ratio for radar and lidar is 9.699% and 6.3545% respectively.
+   (check more details by checking png files(LidarNIS(std_a-2, std_yawdd-3).png, RadarNIS(std_a-2, std_yawdd-3).png) in data folder).
+
+2. RMSE comparison when it's Lidar only, Radar only and Lidar&Radar case
+ - Lidar only case: RMSE failed threshold for Vx term.
+ - Radar only case: RMSE failed threshold for Y and Vy term.
+ - Lidar&Radar case: RMSE has success for all terms.
